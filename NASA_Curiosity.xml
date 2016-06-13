@@ -1,0 +1,854 @@
+<root>
+<mobilebase>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<driveEngine>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>WalkingDriveEngine.groovy</file>
+	</driveEngine>
+
+<name>NASA_Curiosity</name>
+<appendage>
+
+<name>APXS_MAHLI</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>basePan</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>12</index>
+	<scale>0.33</scale>
+	<upperLimit>255.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>128.43283582089552</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>235</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>60.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+<link>
+	<name>baseTilt</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>11</index>
+	<scale>0.33</scale>
+	<upperLimit>255.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>128.0</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>128</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>-90.0</Theta>
+		<Radius>93.0</Radius>
+		<Alpha>0.0</Alpha>
+	</DHParameters>
+
+</link>
+<link>
+	<name>elbow</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>10</index>
+	<scale>0.33</scale>
+	<upperLimit>255.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>121.0</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>121</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>90.0</Theta>
+		<Radius>131.0</Radius>
+		<Alpha>0.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>147.61904761904765</x>
+	<y>0.0</y>
+	<z>3.277801310798082E-14</z>
+	<rotw>1.0</rotw>
+	<rotx>-2.7755575615628907E-17</rotx>
+	<roty>-2.775557561562889E-17</roty>
+	<rotz>8.326672684688674E-17</rotz>
+</baseToZframe>
+
+</appendage>
+<steerable>
+
+<name>Front_Left</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>fl_steer</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>0</index>
+	<scale>0.33</scale>
+	<upperLimit>255.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>133.7089552238806</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>105</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+<link>
+	<name>fl_wheel</name>
+	<deviceName>dyio</deviceName>
+	<type>pid</type>
+	<index>0</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>-1000000.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>133.7089552238806</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>105</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>-55.000000000000014</x>
+	<y>-49.999999999999986</y>
+	<z>70.0</z>
+	<rotw>0.3826834323650911</rotw>
+	<rotx>-1.2443977214448127E-17</rotx>
+	<roty>2.1758644300923735E-16</roty>
+	<rotz>-0.923879532511288</rotz>
+</baseToZframe>
+
+</steerable>
+<steerable>
+
+<name>Back_Left</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>bl_steer</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>1</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>133.7089552238806</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>105</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+<link>
+	<name>bl_wheel</name>
+	<deviceName>dyio</deviceName>
+	<type>pid</type>
+	<index>2</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>-1000000.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>144.84283804856315</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>124</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>54.999999999999986</x>
+	<y>-49.999999999999986</y>
+	<z>70.00000000000003</z>
+	<rotw>0.9762960071199334</rotw>
+	<rotx>-2.5493781137848553E-16</rotx>
+	<roty>-4.713185234563371E-17</roty>
+	<rotz>-0.21643961393810307</rotz>
+</baseToZframe>
+
+</steerable>
+<steerable>
+
+<name>Back_Right</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>br_steer</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>2</index>
+	<scale>0.33</scale>
+	<upperLimit>255.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>133.7089552238806</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>105</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+<link>
+	<name>br_wheel</name>
+	<deviceName>dyio</deviceName>
+	<type>pid</type>
+	<index>3</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>-1000000.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>109.22577411450214</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>133</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>54.999999999999986</x>
+	<y>50.000000000000014</y>
+	<z>70.0</z>
+	<rotw>0.9762960071199334</rotw>
+	<rotx>-6.134658610118171E-17</rotx>
+	<roty>-7.014627255636143E-17</roty>
+	<rotz>0.21643961393810274</rotz>
+</baseToZframe>
+
+</steerable>
+<steerable>
+
+<name>Front_Right</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>fr_steer</name>
+	<deviceName>dyio</deviceName>
+	<type>servo-rotory</type>
+	<index>3</index>
+	<scale>0.33</scale>
+	<upperLimit>255.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>133.7089552238806</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>105</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+<link>
+	<name>fr_wheel</name>
+	<deviceName>dyio</deviceName>
+	<type>pid</type>
+	<index>5</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>-1000000.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>120.38805970149252</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>135</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>-55.000000000000014</x>
+	<y>50.000000000000014</y>
+	<z>69.99999999999997</z>
+	<rotw>0.38268343236507746</rotw>
+	<rotx>-7.252881433641013E-17</rotx>
+	<roty>-1.5750160588727964E-16</roty>
+	<rotz>0.9238795325112926</rotz>
+</baseToZframe>
+
+</steerable>
+<drivable>
+
+<name>Center_Left</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>cl_wheel</name>
+	<deviceName>dyio</deviceName>
+	<type>pid</type>
+	<index>1</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>-1000000.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>162.25373134328353</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>171</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>-1.5543122344752195E-14</x>
+	<y>-59.999999999999986</y>
+	<z>70.00000000000001</z>
+	<rotw>0.7372773350054743</rotw>
+	<rotx>1.9333260774629778E-5</rotx>
+	<roty>-2.3744128324716692E-4</roty>
+	<rotz>-0.6755901675831937</rotz>
+</baseToZframe>
+
+</drivable>
+<drivable>
+
+<name>Center_Right</name>
+	<cadEngine>
+		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
+		<file>ExampleCadGenerator.groovy</file>
+	</cadEngine>
+	<kinematics>
+		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<file>DefaultDhSolver.groovy</file>
+	</kinematics>
+<link>
+	<name>cr_wheel</name>
+	<deviceName>dyio</deviceName>
+	<type>pid</type>
+	<index>4</index>
+	<scale>0.33</scale>
+	<upperLimit>1000000.0</upperLimit>
+	<lowerLimit>-1000000.0</lowerLimit>
+	<upperVelocity>1.0E8</upperVelocity>
+	<lowerVelocity>-1.0E8</lowerVelocity>
+	<staticOffset>122.2910447761194</staticOffset>
+	<isLatch>true</isLatch>
+	<indexLatch>128</indexLatch>
+	<isStopOnLatch>false</isStopOnLatch>
+	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+	<DHParameters>
+		<Delta>0.0</Delta>
+		<Theta>0.0</Theta>
+		<Radius>50.0</Radius>
+		<Alpha>-90.0</Alpha>
+	</DHParameters>
+
+</link>
+
+<ZframeToRAS
+>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>-1.5543122344752188E-14</x>
+	<y>60.000000000000014</y>
+	<z>69.99999999999999</z>
+	<rotw>0.7372773368101241</rotw>
+	<rotx>-4.1568795806038953E-17</rotx>
+	<roty>-4.2141814069759455E-17</roty>
+	<rotz>0.6755902076156602</rotz>
+</baseToZframe>
+
+</drivable>
+
+<ZframeToRAS>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</ZframeToRAS>
+
+<baseToZframe>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</baseToZframe>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<imuFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></imuFromCentroid>
+
+</mobilebase>
+
+</root>
