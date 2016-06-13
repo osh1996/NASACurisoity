@@ -14,8 +14,8 @@
 
 <name>APXS_MAHLI</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>arm.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -179,8 +179,8 @@
 
 <name>Front_Left</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>fl_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -289,10 +289,10 @@
 	<x>-55.000000000000014</x>
 	<y>-49.999999999999986</y>
 	<z>70.0</z>
-	<rotw>0.3826834323650911</rotw>
-	<rotx>-1.2443977214448127E-17</rotx>
-	<roty>2.1758644300923735E-16</roty>
-	<rotz>-0.923879532511288</rotz>
+	<rotw>0.38268343236508867</rotw>
+	<rotx>-1.2443977214448205E-17</rotx>
+	<roty>2.1758644300923839E-16</roty>
+	<rotz>-0.9238795325112924</rotz>
 </baseToZframe>
 
 </steerable>
@@ -300,8 +300,8 @@
 
 <name>Back_Left</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>bl_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -421,8 +421,8 @@
 
 <name>Back_Right</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>br_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -542,8 +542,8 @@
 
 <name>Front_Right</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>fr_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -652,10 +652,10 @@
 	<x>-55.000000000000014</x>
 	<y>50.000000000000014</y>
 	<z>69.99999999999997</z>
-	<rotw>0.38268343236507746</rotw>
-	<rotx>-7.252881433641013E-17</rotx>
-	<roty>-1.5750160588727964E-16</roty>
-	<rotz>0.9238795325112926</rotz>
+	<rotw>0.38268343236507646</rotw>
+	<rotx>-7.252881433641025E-17</rotx>
+	<roty>-1.5750160588727993E-16</roty>
+	<rotz>0.9238795325112943</rotz>
 </baseToZframe>
 
 </steerable>
@@ -663,8 +663,8 @@
 
 <name>Center_Left</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>cl_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -740,8 +740,8 @@
 
 <name>Center_Right</name>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>cr_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
