@@ -1,8 +1,8 @@
 <root>
 <mobilebase>
 	<cadEngine>
-		<git>https://gist.github.com/e54cfebe4f55fb0549dd.git</git>
-		<file>ExampleCadGenerator.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>bodyCad.groovy</file>
 	</cadEngine>
 	<driveEngine>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
