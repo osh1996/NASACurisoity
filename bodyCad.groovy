@@ -64,8 +64,9 @@ return new ICadGenerator(){
 					.rotz(180)
 					.toYMin()
 					.toXMin()
-					.movex(UpperOffset-7.5)
-					.movez(26.3)
+					.movex(UpperOffset-8)
+					.movez(26.75)
+					.movey(-1)
 		CSG LSP2R  = Vitamins.get(LSP2R_file)
 					.toYMin()
 
