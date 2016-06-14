@@ -47,39 +47,66 @@ return new ICadGenerator(){
 		File LSP2L_file= ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/lower-suspension-p2-left.STL");	
-		
-		double UpperOffset = -76.3	
+			
+		double upperHeightAdjust = 2.175
+		double lowerAdjustAngle = 4.6
+		double UpperOffset = -78.5
+		double heightOfUpperHinge = 27+upperHeightAdjust
+		double offsetOfLowerBracket = 8.5
+		double LowerOffset  = 65.25
+		double mainWheelAlignemnt=-5
+		double lowerHingeOffset = 1
+	
 		// Load the .CSG from the disk and cache it in memory
 		CSG body  = Vitamins.get(mainBodyFile)
 		CSG USP1R  = Vitamins.get(USP1R_file)
 					.toYMin()
 					.movex(UpperOffset)
-					.movez(-0.2)
+					.movez(upperHeightAdjust)
 		CSG LSP1R  = Vitamins.get(LSP1R_file)
 					.toYMin()
-					.movez(-5)
-					.movex(-5)
-					.movey(10)
+					.movez(mainWheelAlignemnt)
+					.movex(mainWheelAlignemnt)
+					.roty(lowerAdjustAngle)
+					.movey(offsetOfLowerBracket)
 		CSG USP2R  = Vitamins.get(USP2R_file)
 					.rotz(180)
 					.toYMin()
 					.toXMin()
 					.movex(UpperOffset-8)
-					.movez(26.75)
+					.movez(heightOfUpperHinge)
 					.movey(-1)
 		CSG LSP2R  = Vitamins.get(LSP2R_file)
+					.rotx(-90)
+					.rotz(180)
 					.toYMin()
-
+					.toXMin()
+					.toYMin()
+					.movey(offsetOfLowerBracket-lowerHingeOffset)
+					.movez(heightOfUpperHinge)
+					.movex(LowerOffset)
+					
 		CSG USP1L  = Vitamins.get(USP1L_file)
+					.movex(UpperOffset)
+					.movez(upperHeightAdjust)
 		CSG LSP1L  = Vitamins.get(LSP1L_file)
-					.movez(-5)
-					.movex(-5)
-					.movey(-10)
+					.movez(mainWheelAlignemnt)
+					.movex(mainWheelAlignemnt+0.25)
+					.roty(lowerAdjustAngle)
+					.movey(-offsetOfLowerBracket+0.75)
+					.movez(0.25)
 		CSG USP2L  = Vitamins.get(USP2L_file)
+					.movex(UpperOffset-8)
+					.movez(heightOfUpperHinge)
+					.movey(1)
 		CSG LSP2L  = Vitamins.get(LSP2L_file)
+					.rotx(-90)
+					.movey(-offsetOfLowerBracket+lowerHingeOffset)
+					.movez(heightOfUpperHinge)
+					.movex(LowerOffset)
 
-		def left =[USP1L,LSP1L,USP2L]
-		def right = [USP1R,LSP1R,USP2R]
+		def left =[USP1L,LSP1L,USP2L,LSP2L]
+		def right = [USP1R,LSP1R,USP2R,LSP2R]
 
 
 		body.setManipulator(b.getRootListener());
