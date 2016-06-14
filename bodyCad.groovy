@@ -47,7 +47,7 @@ return new ICadGenerator(){
 		File LSP2L_file= ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/lower-suspension-p2-left.STL");	
-			
+		/*
 		double upperHeightAdjust = 2.175
 		double lowerAdjustAngle = 4.6
 		double UpperOffset = -78.5
@@ -56,63 +56,45 @@ return new ICadGenerator(){
 		double LowerOffset  = 65.25
 		double mainWheelAlignemnt=-5
 		double lowerHingeOffset = 1
+		*/
+		double widthOfBody =43
 	
 		// Load the .CSG from the disk and cache it in memory
 		CSG body  = Vitamins.get(mainBodyFile)
-		CSG USP1R  = Vitamins.get(USP1R_file)
-					.toYMin()
-					.movex(UpperOffset)
-					.movez(upperHeightAdjust)
-		CSG LSP1R  = Vitamins.get(LSP1R_file)
-					.toYMin()
-					.movez(mainWheelAlignemnt)
-					.movex(mainWheelAlignemnt)
-					.roty(lowerAdjustAngle)
-					.movey(offsetOfLowerBracket)
-		CSG USP2R  = Vitamins.get(USP2R_file)
-					.rotz(180)
-					.toYMin()
-					.toXMin()
-					.movex(UpperOffset-8)
-					.movez(heightOfUpperHinge)
-					.movey(-1)
-		CSG LSP2R  = Vitamins.get(LSP2R_file)
-					.rotx(-90)
-					.rotz(180)
-					.toYMin()
-					.toXMin()
-					.toYMin()
-					.movey(offsetOfLowerBracket-lowerHingeOffset)
-					.movez(heightOfUpperHinge)
-					.movex(LowerOffset)
-					
-		CSG USP1L  = Vitamins.get(USP1L_file)
-					.movex(UpperOffset)
-					.movez(upperHeightAdjust)
-		CSG LSP1L  = Vitamins.get(LSP1L_file)
-					.movez(mainWheelAlignemnt)
-					.movex(mainWheelAlignemnt+0.25)
-					.roty(lowerAdjustAngle)
-					.movey(-offsetOfLowerBracket+0.75)
-					.movez(0.25)
-		CSG USP2L  = Vitamins.get(USP2L_file)
-					.movex(UpperOffset-8)
-					.movez(heightOfUpperHinge)
-					.movey(1)
-		CSG LSP2L  = Vitamins.get(LSP2L_file)
-					.rotx(-90)
-					.movey(-offsetOfLowerBracket+lowerHingeOffset)
-					.movez(heightOfUpperHinge)
-					.movex(LowerOffset)
 
-		def left =[USP1L,LSP1L,USP2L,LSP2L]
-		def right = [USP1R,LSP1R,USP2R,LSP2R]
+		CSG USP1R  = Vitamins.get(USP1R_file).movey(widthOfBody)
+		CSG LSP1R  = Vitamins.get(LSP1R_file).movey(widthOfBody)
+		CSG USP2R  = Vitamins.get(USP2R_file).movey(widthOfBody)
+		CSG LSP2R  = Vitamins.get(LSP2R_file).movey(widthOfBody)
+		CSG USP1L  = Vitamins.get(USP1L_file).movey(-widthOfBody)
+		CSG LSP1L  = Vitamins.get(LSP1L_file).movey(-widthOfBody)
+		CSG USP2L  = Vitamins.get(USP2L_file).movey(-widthOfBody)
+		CSG LSP2L  = Vitamins.get(LSP2L_file).movey(-widthOfBody)
 
 
+/*
+		FileUtil.write(Paths.get(USP1L_file.getAbsolutePath()),
+							USP1L.toStlString());
+		FileUtil.write(Paths.get(USP2L_file.getAbsolutePath()),
+							USP2L.toStlString());
+		FileUtil.write(Paths.get(LSP1L_file.getAbsolutePath()),
+							LSP1L.toStlString());
+		FileUtil.write(Paths.get(LSP2L_file.getAbsolutePath()),
+							LSP2L.toStlString());
+		//right					
+		FileUtil.write(Paths.get(USP1R_file.getAbsolutePath()),
+							USP1R.toStlString());
+		FileUtil.write(Paths.get(USP2R_file.getAbsolutePath()),
+							USP2R.toStlString());
+		FileUtil.write(Paths.get(LSP1R_file.getAbsolutePath()),
+							LSP1R.toStlString());
+		FileUtil.write(Paths.get(LSP2R_file.getAbsolutePath()),
+							LSP2R.toStlString());
+*/
 		body.setManipulator(b.getRootListener());
-		left.addAll(right)
-		//left.add(body)
 
-		return left;
+		
+
+		return [body ,USP1R,LSP1R,USP2R,LSP2R,USP1L,LSP1L,USP2L,LSP2L ];
 	}
 };
