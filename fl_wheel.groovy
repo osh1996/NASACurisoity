@@ -25,28 +25,45 @@ return new ICadGenerator(){
 
 		if (i==0){
 			
-			File wheel_file = ScriptingEngine.fileFromGit(
+			File steer_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/steering-bracket.STL");
-			CSG wheel = Vitamins.get(wheel_file)
-			wheel=wheel			
-					.movex(-wheel.getMaxX()/2)
-					.movey(-wheel.getMaxY()/2)
-					.movez(-wheel.getMaxZ()/2)
-			wheel.setManipulator(manipulator)
-			allCad.add(wheel)
+			CSG steer = Vitamins.get(steer_file)
+			steer = steer
+					.toZMax()
+					.movex(-steer.getMaxX()/2)
+					.movez(steer.getMaxX()/2)
+					.movey(-steer.getMaxX()/2+1)
+			steer.setManipulator(manipulator)
+			allCad.add(steer)
 		}
 		if (i==1){
 			File wheel_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"STL/wheel.STL");
+			File tire_file = ScriptingEngine.fileFromGit(
+			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/tire.STL");
+			/*
 			CSG wheel = Vitamins.get(wheel_file)
 			wheel=wheel			
 					.movex(-wheel.getMaxX()/2)
 					.movey(-wheel.getMaxY()/2)
 					.movez(-wheel.getMaxZ()/2)
+					.rotx(90)
 			wheel.setManipulator(manipulator)
+			
 			allCad.add(wheel)
+			*/
+			CSG tire = Vitamins.get(tire_file)
+			tire=tire			
+					.movex(-tire.getMaxX()/2)
+					.movey(-tire.getMaxY()/2)
+					.movez(-tire.getMaxZ()/2)
+					.rotx(90)
+			tire.setManipulator(manipulator)
+			
+			allCad.add(tire)
 		}
 		return allCad;
 	}
