@@ -353,7 +353,7 @@
 </link>
 <link>
 	<name>bl_wheel</name>
-	<deviceName>dyio</deviceName>
+	<deviceName>pid</deviceName>
 	<type>pid</type>
 	<index>2</index>
 	<scale>0.33</scale>
@@ -474,7 +474,7 @@
 </link>
 <link>
 	<name>br_wheel</name>
-	<deviceName>dyio</deviceName>
+	<deviceName>pid</deviceName>
 	<type>pid</type>
 	<index>3</index>
 	<scale>0.33</scale>
@@ -595,7 +595,7 @@
 </link>
 <link>
 	<name>fr_wheel</name>
-	<deviceName>dyio</deviceName>
+	<deviceName>pid</deviceName>
 	<type>pid</type>
 	<index>5</index>
 	<scale>0.33</scale>
