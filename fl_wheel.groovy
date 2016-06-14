@@ -29,13 +29,10 @@ return new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/steering-bracket.STL");
 			CSG steer = Vitamins.get(steer_file)
-			steer = steer
-					.toZMax()
-					.movex(-steer.getMaxX()/2)
-					.movez(steer.getMaxX()/2)
-					.movey(-steer.getMaxX()/2+1)
+
 			steer.setManipulator(manipulator)
 			allCad.add(steer)
+	
 		}
 		if (i==1){
 			File wheel_file = ScriptingEngine.fileFromGit(
@@ -56,13 +53,9 @@ return new ICadGenerator(){
 			allCad.add(wheel)
 			*/
 			CSG tire = Vitamins.get(tire_file)
-			tire=tire			
-					.movex(-tire.getMaxX()/2)
-					.movey(-tire.getMaxY()/2)
-					.movez(-tire.getMaxZ()/2)
-					.rotx(90)
+
 			tire.setManipulator(manipulator)
-			
+
 			allCad.add(tire)
 		}
 		return allCad;
