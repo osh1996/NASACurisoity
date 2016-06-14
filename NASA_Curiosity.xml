@@ -10,171 +10,6 @@
 	</driveEngine>
 
 <name>NASA_Curiosity</name>
-<appendage>
-
-<name>APXS_MAHLI</name>
-	<cadEngine>
-		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>arm.groovy</file>
-	</cadEngine>
-	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>DefaultDhSolver.groovy</file>
-	</kinematics>
-<link>
-	<name>basePan</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>12</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>128.43283582089552</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>235</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<electroMechanicalSize>standardMicro</electroMechanicalSize>
-	<electroMechanicalType>hobbyServo</electroMechanicalType>
-	<shaftSize>standardMicro1</shaftSize>
-	<shaftType>hobbyServoHorn</shaftType>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></imuFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>60.0</Radius>
-		<Alpha>-90.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>baseTilt</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>11</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>128.0</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>128</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<electroMechanicalSize>standardMicro</electroMechanicalSize>
-	<electroMechanicalType>hobbyServo</electroMechanicalType>
-	<shaftSize>standardMicro1</shaftSize>
-	<shaftType>hobbyServoHorn</shaftType>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></imuFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>-90.0</Theta>
-		<Radius>93.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>elbow</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>10</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>121.0</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>121</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<electroMechanicalSize>standardMicro</electroMechanicalSize>
-	<electroMechanicalType>hobbyServo</electroMechanicalType>
-	<shaftSize>standardMicro1</shaftSize>
-	<shaftType>hobbyServoHorn</shaftType>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></imuFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>90.0</Theta>
-		<Radius>131.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-
-<ZframeToRAS
->	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>-66.66666666666666</x>
-	<y>0.0</y>
-	<z>-1.4802973661668752E-14</z>
-	<rotw>0.3303646506036949</rotw>
-	<rotx>0.33036465060368925</rotx>
-	<roty>-0.6251873300311633</roty>
-	<rotz>-0.6251873300311632</rotz>
-</baseToZframe>
-
-</appendage>
 <steerable>
 
 <name>Front_Left</name>
@@ -289,10 +124,10 @@
 	<x>-78.5</x>
 	<y>-73.75</y>
 	<z>-1.0547118733938987E-15</z>
-	<rotw>0.00936285178698138</rotw>
-	<rotx>-0.9318695281861071</rotx>
-	<roty>0.011580700442418284</roty>
-	<rotz>-1.0106324168888977E-4</rotz>
+	<rotw>0.26097037974103027</rotw>
+	<rotx>-0.035872486301680766</rotx>
+	<roty>4.4580116144923615E-4</roty>
+	<rotz>-3.890447797072855E-6</rotz>
 </baseToZframe>
 
 </steerable>
@@ -410,10 +245,10 @@
 	<x>73.5</x>
 	<y>-74.5</y>
 	<z>3.2862601528904634E-14</z>
-	<rotw>0.008726203222918795</rotw>
-	<rotx>-0.9999238470881606</rotx>
-	<roty>0.00872620321436162</roty>
-	<rotz>-7.61524217713311E-5</rotz>
+	<rotw>0.008726231301233964</rotw>
+	<rotx>-0.9999206301322423</rotx>
+	<roty>0.008726175140412634</roty>
+	<rotz>-7.615217677374881E-5</rotz>
 </baseToZframe>
 
 </steerable>
@@ -531,10 +366,10 @@
 	<x>73.5</x>
 	<y>74.5</y>
 	<z>-2.220446049250313E-16</z>
-	<rotw>3.527514581241699E-5</rotw>
-	<rotx>-0.0188382355327658</rotx>
-	<roty>2.1586479803972343</roty>
-	<rotz>-0.0188382355327658</rotz>
+	<rotw>7.615242163974977E-5</rotw>
+	<rotx>-0.008726203237438421</rotx>
+	<roty>0.9999238497407336</roty>
+	<rotz>-0.008726203237438421</rotz>
 </baseToZframe>
 
 </steerable>
@@ -652,10 +487,10 @@
 	<x>-78.5</x>
 	<y>73.75</y>
 	<z>-3.3806291099836017E-14</z>
-	<rotw>6.032748543731545E-5</rotw>
-	<rotx>-0.011015236289047083</rotx>
-	<roty>1.2622210572250265</roty>
-	<rotz>-0.011015236289047083</rotz>
+	<rotw>NaN</rotw>
+	<rotx>NaN</rotx>
+	<roty>NaN</roty>
+	<rotz>NaN</rotz>
 </baseToZframe>
 
 </steerable>
@@ -729,10 +564,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.003085325583657598</rotw>
-	<rotx>0.0030853255836577544</rotx>
-	<roty>-0.7071000500398168</roty>
-	<rotz>-0.7071000500398166</rotz>
+	<rotw>0.0030853255401665346</rotw>
+	<rotx>0.003085325627148818</rotx>
+	<roty>-0.7071000600069814</roty>
+	<rotz>-0.7071000600069812</rotz>
 </baseToZframe>
 
 </drivable>
@@ -806,10 +641,10 @@
 	<x>3.1554436208840472E-30</x>
 	<y>74.0</y>
 	<z>-1.6431300764452317E-14</z>
-	<rotw>0.707100050039627</rotw>
-	<rotx>0.7071000500396267</rotx>
+	<rotw>0.7071000500396271</rotw>
+	<rotx>0.7071000500396266</rotx>
 	<roty>-0.003085325583658583</roty>
-	<rotz>-0.0030853255836584253</rotz>
+	<rotz>-0.003085325583658425</rotz>
 </baseToZframe>
 
 </drivable>
