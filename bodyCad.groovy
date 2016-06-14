@@ -29,9 +29,7 @@ return new ICadGenerator(){
 		File USP2R_file= ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/upper-suspension-p2-right.STL");
-		File LSP2R_file = ScriptingEngine.fileFromGit(
-			"https://github.com/NeuronRobotics/NASACurisoity.git",
-			"STL/lower-suspension-p2-right.STL");	
+		
 		File USP1L_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/upper-suspension-p1-left.STL");
@@ -41,34 +39,46 @@ return new ICadGenerator(){
 		File USP2L_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/upper-suspension-p2-left.STL");
+			
+		//changed
+		File LSP2R_file = ScriptingEngine.fileFromGit(
+			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"STL/lower-suspension-p2-right.STL");		
 		File LSP2L_file= ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/lower-suspension-p2-left.STL");	
 		
-			
+		double UpperOffset = -76.3	
 		// Load the .CSG from the disk and cache it in memory
 		CSG body  = Vitamins.get(mainBodyFile)
 		CSG USP1R  = Vitamins.get(USP1R_file)
 					.toYMin()
-					
+					.movex(UpperOffset)
+					.movez(-0.2)
 		CSG LSP1R  = Vitamins.get(LSP1R_file)
 					.toYMin()
-					
+					.movez(-5)
+					.movex(-5)
+					.movey(10)
 		CSG USP2R  = Vitamins.get(USP2R_file)
 					.rotz(180)
 					.toYMin()
 					.toXMin()
+					.movex(UpperOffset-7.5)
+					.movez(26.3)
 		CSG LSP2R  = Vitamins.get(LSP2R_file)
 					.toYMin()
-					.movez(-5)
-					.movex(-5)
+
 		CSG USP1L  = Vitamins.get(USP1L_file)
 		CSG LSP1L  = Vitamins.get(LSP1L_file)
+					.movez(-5)
+					.movex(-5)
+					.movey(-10)
 		CSG USP2L  = Vitamins.get(USP2L_file)
 		CSG LSP2L  = Vitamins.get(LSP2L_file)
 
-		def left =[USP1L,LSP1L,USP2L,LSP2L]
-		def right = [USP1R,LSP1R,USP2R,LSP2R]
+		def left =[USP1L,LSP1L,USP2L]
+		def right = [USP1R,LSP1R,USP2R]
 
 
 		body.setManipulator(b.getRootListener());
