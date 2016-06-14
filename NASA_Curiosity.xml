@@ -564,10 +564,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>NaN</rotw>
-	<rotx>NaN</rotx>
-	<roty>NaN</roty>
-	<rotz>NaN</rotz>
+	<rotw>7.615242163974977E-5</rotw>
+	<rotx>-0.008726203237438421</rotx>
+	<roty>0.9999238497407336</roty>
+	<rotz>-0.008726203237438421</rotz>
 </baseToZframe>
 
 </drivable>
