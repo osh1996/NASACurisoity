@@ -23,18 +23,8 @@ return new ICadGenerator(){
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
 
-		if (i==0){
-			
-			File steer_file = ScriptingEngine.fileFromGit(
-			"https://github.com/NeuronRobotics/NASACurisoity.git",
-			"STL/steering-bracket.STL");
-			CSG steer = Vitamins.get(steer_file)
 
-			steer.setManipulator(manipulator)
-			allCad.add(steer)
-	
-		}
-		if (i==1){
+		if (i==0){
 			File wheel_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/wheel.STL");
