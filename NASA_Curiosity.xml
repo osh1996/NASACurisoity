@@ -180,7 +180,7 @@
 <name>Front_Left</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>fl_wheel.groovy</file>
+		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -301,7 +301,7 @@
 <name>Back_Left</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>bl_wheel.groovy</file>
+		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -422,7 +422,7 @@
 <name>Back_Right</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>br_wheel.groovy</file>
+		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -543,7 +543,7 @@
 <name>Front_Right</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>fr_wheel.groovy</file>
+		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
