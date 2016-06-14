@@ -43,7 +43,7 @@ return new ICadGenerator(){
 			"STL/upper-suspension-p2-left.STL");
 		File LSP2L_file= ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
-			"STL/lower-suspension-p1-left.STL");	
+			"STL/lower-suspension-p2-left.STL");	
 		
 			
 		// Load the .CSG from the disk and cache it in memory
