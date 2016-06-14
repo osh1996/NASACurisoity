@@ -232,7 +232,7 @@
 </link>
 <link>
 	<name>fl_wheel</name>
-	<deviceName>dyio</deviceName>
+	<deviceName>pid</deviceName>
 	<type>pid</type>
 	<index>0</index>
 	<scale>0.33</scale>
@@ -289,10 +289,10 @@
 	<x>-55.000000000000014</x>
 	<y>-49.999999999999986</y>
 	<z>70.0</z>
-	<rotw>0.3826834323650601</rotw>
-	<rotx>-1.2443977214448877E-17</rotx>
-	<roty>2.1758644300925056E-16</roty>
-	<rotz>-0.923879532511344</rotz>
+	<rotw>0.0</rotw>
+	<rotx>Infinity</rotx>
+	<roty>Infinity</roty>
+	<rotz>NaN</rotz>
 </baseToZframe>
 
 </steerable>
