@@ -147,8 +147,8 @@
 	<deviceName>dyio</deviceName>
 	<type>servo-rotory</type>
 	<index>1</index>
-	<scale>0.33</scale>
-	<upperLimit>1000000.0</upperLimit>
+	<scale>1.0</scale>
+	<upperLimit>255.0</upperLimit>
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
@@ -487,10 +487,10 @@
 	<x>-78.5</x>
 	<y>73.75</y>
 	<z>-3.3806291099836017E-14</z>
-	<rotw>NaN</rotw>
-	<rotx>NaN</rotx>
-	<roty>NaN</roty>
-	<rotz>NaN</rotz>
+	<rotw>7.615242163974977E-5</rotw>
+	<rotx>-0.008726203237438421</rotx>
+	<roty>0.9999238497407336</roty>
+	<rotz>-0.008726203237438421</rotz>
 </baseToZframe>
 
 </steerable>
