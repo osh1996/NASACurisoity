@@ -664,7 +664,7 @@
 <name>Center_Left</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>cl_wheel.groovy</file>
+		<file>fixed_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -741,7 +741,7 @@
 <name>Center_Right</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
-		<file>cr_wheel.groovy</file>
+		<file>fixed_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
