@@ -4,7 +4,7 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 
 	@Override
 	public void DriveArc(MobileBase source, TransformNR newPose, double seconds) {
-		
+		println "To: "+newPose
 	}
 	@Override
 	public void DriveVelocityStraight(MobileBase source, double cmPerSecond) {
