@@ -35,17 +35,32 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 			Matrix ftb = global.getMatrixTransform();// our new target
 			Matrix mForward = ftb.times(btt)
 			TransformNR inc =new TransformNR( mForward);// this wheels new increment
-			TransformNR vect =new TransformNR( btt.inverse().times(mForward));// this wheels new increment
+			TransformNR vect =new TransformNR(btt.inverse().times(mForward));// this wheels new increment
+			double xyplaneDistance = Math.sqrt(
+										Math.pow(vect.getX(),2)+
+										Math.pow(vect.getY(),2)
+									)
+			double steer =90-Math.toDegrees( Math.atan2(vect.getX(),vect.getY()))
+			boolean reverseWheel = false
+			if(steer>90){
+				steer=steer-180
+				reverseWheel=true;
+			}
+			if(steer<-90){
+				steer=steer+180
+				reverseWheel=true;
+			}
 			if (i==2){
+				println "Update "+newPose
 				println "Start "+wheelStarting
 				println "New "+inc
 				println "Vector "+vect
-				
+				println "XY plane distance "+xyplaneDistance
+				println "Steer angle "+steer
 			}
 			
 			if(steerable.contains(thisWheel)){
-				//println "Wheel "+i+" is steerable"
-				
+				thisWheel.setDesiredJointAxisValue(0,steer,0)
 			}
 			
 		}
