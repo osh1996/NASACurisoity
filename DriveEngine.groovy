@@ -50,16 +50,9 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 				steer=steer+180
 				reverseWheel=true;
 			}
-			if (i==2){
-				println "Update "+newPose
-				println "Start "+wheelStarting
-				println "New "+inc
-				println "Vector "+vect
-				println "XY plane distance "+xyplaneDistance
-				println "Steer angle "+steer
-			}
-			
 			if(steerable.contains(thisWheel)){
+				println "\n\n"+i+" XY plane distance "+xyplaneDistance
+				println "Steer angle "+steer
 				thisWheel.setDesiredJointAxisValue(0,steer,0)
 			}
 			
