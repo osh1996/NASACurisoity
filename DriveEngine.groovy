@@ -75,8 +75,12 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 			double theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)*(reverseWheel?-1:1)
 			
 			double currentWheel= thisWheel.getCurrentJointSpaceVector()[wheelIndex]
-			println "\n\n"+i+" Wheel angle update "+theta+" current= "+currentWheel
-			
+			if(i==2){
+				
+				println "\n\n"+i+" XY plane distance "+xyplaneDistance+" radius of wheel= "+radiusOfWheel
+				println "Steer angle "+steer
+				println i+" Wheel angle update "+theta+" current= "+currentWheel
+			}
 			try{
 				thisWheel.setDesiredJointAxisValue(wheelIndex,theta+currentWheel,seconds);
 			}catch(Exception e){
