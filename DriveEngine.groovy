@@ -74,7 +74,11 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 			double radiusOfWheel = dh.getR()
 			double theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)
 			println "\n\n"+i+" Wheel angle update "+theta
-			abstractLink.setDesiredJointAxisValue(wheelIndex,theta,seconds);
+			try{
+				thisWheel.setDesiredJointAxisValue(wheelIndex,theta,seconds);
+			}catch(Exception e){
+					e.printStackTrace(System.out)
+			}
 		}
 	}
 	@Override
