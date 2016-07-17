@@ -5,8 +5,8 @@
 		<file>bodyCad.groovy</file>
 	</cadEngine>
 	<driveEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>WalkingDriveEngine.groovy</file>
+		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
+		<file>DriveEngine.groovy</file>
 	</driveEngine>
 
 <name>NASA_Curiosity</name>
