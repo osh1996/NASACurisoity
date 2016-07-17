@@ -50,16 +50,31 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 				steer=steer+180
 				reverseWheel=true;
 			}
+			ArrayList<DHLink> dhLinks = thisWheel.getChain().getLinks()
+			
+			int wheelIndex =0;
+			
 			if(steerable.contains(thisWheel)){
-				println "\n\n"+i+" XY plane distance "+xyplaneDistance
-				println "Steer angle "+steer
+				//println "\n\n"+i+" XY plane distance "+xyplaneDistance
+				//println "Steer angle "+steer
 				try{
 				thisWheel.setDesiredJointAxisValue(0,steer,0)
 				}catch(Exception e){
 					e.printStackTrace(System.out)
 				}
+				wheelIndex=1
 			}
-			
+			DHLink dh = dhLinks.get(wheelIndex)
+			// Hardware to engineering units configuration
+			LinkConfiguration conf = thisWheel.getLinkConfiguration(wheelIndex);
+			// Engineering units to kinematics link (limits and hardware type abstraction)
+			AbstractLink abstractLink = thisWheel.getAbstractLink(wheelIndex);// Transform used by the UI to render the location of the object
+			// Transform used by the UI to render the location of the object
+			Affine manipulator = dh.getListener();
+			double radiusOfWheel = dh.getR()
+			double theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)
+			println "\n\n"+i+" Wheel angle update "+theta
+			abstractLink.setDesiredJointAxisValue(wheelIndex,theta,seconds);
 		}
 	}
 	@Override
