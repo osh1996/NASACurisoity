@@ -53,7 +53,11 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 			if(steerable.contains(thisWheel)){
 				println "\n\n"+i+" XY plane distance "+xyplaneDistance
 				println "Steer angle "+steer
+				try{
 				thisWheel.setDesiredJointAxisValue(0,steer,0)
+				}catch(Exception e){
+					e.printStackTrace(System.out)
+				}
 			}
 			
 		}
