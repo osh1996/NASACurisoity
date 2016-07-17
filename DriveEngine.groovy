@@ -72,10 +72,13 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 			// Transform used by the UI to render the location of the object
 			Affine manipulator = dh.getListener();
 			double radiusOfWheel = dh.getR()
-			double theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)
-			println "\n\n"+i+" Wheel angle update "+theta
+			double theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)*(reverseWheel?-1:1)
+			
+			double currentWheel= thisWheel.getCurrentJointSpaceVector()[wheelIndex]
+			println "\n\n"+i+" Wheel angle update "+theta+" current= "+currentWheel
+			
 			try{
-				thisWheel.setDesiredJointAxisValue(wheelIndex,theta,seconds);
+				thisWheel.setDesiredJointAxisValue(wheelIndex,theta+currentWheel,seconds);
 			}catch(Exception e){
 					e.printStackTrace(System.out)
 			}
