@@ -139,11 +139,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>-78.5</x>
+	<y>-73.75</y>
+	<z>0.0</z>
+	<rotw>0.00863817055661582</rotw>
+	<rotx>-1.0105134833464726</rotx>
+	<roty>0.008822119427544859</roty>
+	<rotz>3.2428366585436624E-4</rotz>
 </baseToZframe>
 
 </steerable>
@@ -279,10 +281,10 @@
 	<x>73.5</x>
 	<y>-74.5</y>
 	<z>3.2862601528904634E-14</z>
-	<rotw>0.008726302953799538</rotw>
-	<rotx>-0.9999124209320398</rotx>
-	<roty>0.008726103499812642</roty>
-	<rotz>-7.615155157089147E-5</rotz>
+	<rotw>0.008726203233831832</rotw>
+	<rotx>-0.9999238458378322</rotx>
+	<roty>0.008726203203455013</roty>
+	<rotz>-7.615242167132339E-5</rotz>
 </baseToZframe>
 
 </steerable>
@@ -415,11 +417,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>73.5</x>
+	<y>74.5</y>
+	<z>0.0</z>
+	<rotw>0.00863817055661582</rotw>
+	<rotx>-1.0105134833464726</rotx>
+	<roty>0.008822119427544859</roty>
+	<rotz>3.2428366585436624E-4</rotz>
 </baseToZframe>
 
 </steerable>
@@ -552,11 +556,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>-78.5</x>
+	<y>73.75</y>
+	<z>0.0</z>
+	<rotw>0.00863817055661582</rotw>
+	<rotx>-1.0105134833464726</rotx>
+	<roty>0.008822119427544859</roty>
+	<rotz>3.2428366585436624E-4</rotz>
 </baseToZframe>
 
 </steerable>
@@ -639,10 +645,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.006170601929927255</rotw>
-	<rotx>0.006170582897752477</rotx>
-	<roty>-0.7070789446950648</roty>
-	<rotz>-0.707078944667898</rotz>
+	<rotw>0.006170593970613203</rotw>
+	<rotx>0.00617059085644951</rotx>
+	<roty>-0.7070798566712612</roty>
+	<rotz>-0.7070798566440943</rotz>
 </baseToZframe>
 
 </drivable>
