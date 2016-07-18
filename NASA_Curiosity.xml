@@ -103,7 +103,7 @@
 
 </vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.1</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -242,7 +242,7 @@
 
 </vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.1</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -381,7 +381,7 @@
 
 </vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.1</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -520,7 +520,7 @@
 
 </vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.1</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -606,7 +606,7 @@
 
 </vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.1</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -692,7 +692,7 @@
 
 </vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.1</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
