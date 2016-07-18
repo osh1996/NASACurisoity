@@ -15,7 +15,7 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 	}
 	@Override
 	public void DriveArc(MobileBase source, TransformNR newPose, double seconds) {
-		//newPose = newPose.inverse()
+		newPose = newPose.inverse()
 		ArrayList<DHParameterKinematics> wheels = getAllDHChains( source)
 		ArrayList<DHParameterKinematics> steerable = source.getSteerable();
 		
@@ -40,6 +40,9 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 										Math.pow(vect.getX(),2)+
 										Math.pow(vect.getY(),2)
 									)
+			if(Math.abs(xyplaneDistance)<0.01){
+					xyplaneDistance=0;				
+			}
 			double steer =90-Math.toDegrees( Math.atan2(vect.getX(),vect.getY()))
 			boolean reverseWheel = false
 			if(steer>90){
@@ -58,7 +61,7 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 				//println "\n\n"+i+" XY plane distance "+xyplaneDistance
 				//println "Steer angle "+steer
 				try{
-				thisWheel.setDesiredJointAxisValue(0,steer,0)
+					thisWheel.setDesiredJointAxisValue(0,steer,0)
 				}catch(Exception e){
 					e.printStackTrace(System.out)
 				}
@@ -72,8 +75,10 @@ return new com.neuronrobotics.sdk.addons.kinematics.IDriveEngine (){
 			// Transform used by the UI to render the location of the object
 			Affine manipulator = dh.getListener();
 			double radiusOfWheel = dh.getR()
-			double theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)*(reverseWheel?-1:1)
-			
+			double theta=0
+			if(Math.abs(xyplaneDistance)>0.01){
+				theta=Math.toDegrees(radiusOfWheel/xyplaneDistance)*(reverseWheel?-1:1)
+			}
 			double currentWheel= thisWheel.getCurrentJointSpaceVector()[wheelIndex]
 			if(i==2){
 				
