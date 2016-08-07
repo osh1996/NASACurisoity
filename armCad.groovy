@@ -42,6 +42,30 @@ ICadGenerator cadGen =new ICadGenerator(){
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
 		}
+		if(linkIndex==1){		
+			File swivel = ScriptingEngine.fileFromGit(
+			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"STL/lower-arm.STL");
+			CSG swivelCSG  = Vitamins.get(swivel)
+			swivelCSG.setManipulator(manipulator);
+			parts.add(swivelCSG)
+		}
+		if(linkIndex==2){		
+			File swivel = ScriptingEngine.fileFromGit(
+			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"STL/upper-arm.STL");
+			CSG swivelCSG  = Vitamins.get(swivel)
+			swivelCSG.setManipulator(manipulator);
+			parts.add(swivelCSG)
+		}
+		if(linkIndex==3){		
+			File swivel = ScriptingEngine.fileFromGit(
+			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"STL/mahli-apxs.STL");
+			CSG swivelCSG  = Vitamins.get(swivel)
+			swivelCSG.setManipulator(manipulator);
+			parts.add(swivelCSG)
+		}
 		return parts
 	}
 	@Override 
