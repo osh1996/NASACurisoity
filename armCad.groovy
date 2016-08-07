@@ -37,6 +37,8 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/swivel.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
+				.rotz(90)
+				.roty(-90)
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
 		}
