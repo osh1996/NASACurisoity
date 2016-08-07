@@ -192,9 +192,9 @@
 	<y>-23.069999999999993</y>
 	<z>38.095238095238095</z>
 	<rotw>1.0</rotw>
-	<rotx>-2.7755575615628907E-17</rotx>
-	<roty>-2.775557561562889E-17</roty>
-	<rotz>8.326672684688674E-17</rotz>
+	<rotx>0</rotx>
+	<roty>0</roty>
+	<rotz>0</rotz>
 </baseToZframe>
 
 </appendage>
