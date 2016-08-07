@@ -39,6 +39,7 @@ ICadGenerator cadGen =new ICadGenerator(){
 			CSG swivelCSG  = Vitamins.get(swivel)
 				.rotz(90)
 				.roty(-90)
+				.roty(180)
 				.movex(-dh.getR())
 				.movey(dh.getD())
 			swivelCSG.setManipulator(manipulator);
@@ -49,7 +50,7 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/lower-arm.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
-			.rotx(180)
+			
 			.movex(-dh.getR())
 					.movez(-dh.getD())
 					
@@ -61,6 +62,7 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/upper-arm.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
+			.rotx(180)
 			.movex(-dh.getR())
 					.movez(-dh.getD())
 			swivelCSG.setManipulator(manipulator);
