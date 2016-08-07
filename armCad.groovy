@@ -28,8 +28,8 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/swivel-bracket.STL");
 			CSG mountCSG  = Vitamins.get(mount)
-			.rotz(90)
-			.roty(90)
+			.rotz(-90)
+			.roty(-90)
 			mountCSG.setManipulator(d.getRootListener());
 			parts.add(mountCSG)
 			
@@ -39,6 +39,8 @@ ICadGenerator cadGen =new ICadGenerator(){
 			CSG swivelCSG  = Vitamins.get(swivel)
 				.rotz(90)
 				.roty(-90)
+				.movex(-dh.getR())
+				.movey(dh.getD())
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
 		}
@@ -47,6 +49,10 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/lower-arm.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
+			.rotx(180)
+			.movex(-dh.getR())
+					.movez(-dh.getD())
+					
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
 		}
@@ -55,6 +61,8 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/upper-arm.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
+			.movex(-dh.getR())
+					.movez(-dh.getD())
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
 		}
@@ -63,6 +71,8 @@ ICadGenerator cadGen =new ICadGenerator(){
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/mahli-apxs.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
+			.movex(-dh.getR())
+					.movez(-dh.getD())
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
 		}
