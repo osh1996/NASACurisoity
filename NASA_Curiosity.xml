@@ -11,7 +11,6 @@
 
 <name>NASA_Curiosity</name>
 <appendage>
-
 <name>RobotArm</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
@@ -37,7 +36,16 @@
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
 	<vitamins>
-
+	<vitamin>
+	<name>electroMechanical</name>
+	<type>hobbyServo</type>
+	<id>standardMicro</id>
+	</vitamin>
+	<vitamin>
+	<name>shaft</name>
+	<type>hobbyServoHorn</type>
+	<id>standardMicro1</id>
+	</vitamin>
 </vitamins>
 	<passive>false</passive>
 	<mass>0.01</mass>
@@ -80,7 +88,16 @@
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
 	<vitamins>
-
+	<vitamin>
+	<name>electroMechanical</name>
+	<type>hobbyServo</type>
+	<id>standardMicro</id>
+	</vitamin>
+	<vitamin>
+	<name>shaft</name>
+	<type>hobbyServoHorn</type>
+	<id>standardMicro1</id>
+	</vitamin>
 </vitamins>
 	<passive>false</passive>
 	<mass>0.01</mass>
@@ -123,7 +140,16 @@
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
 	<vitamins>
-
+	<vitamin>
+	<name>electroMechanical</name>
+	<type>hobbyServo</type>
+	<id>standardMicro</id>
+	</vitamin>
+	<vitamin>
+	<name>shaft</name>
+	<type>hobbyServoHorn</type>
+	<id>standardMicro1</id>
+	</vitamin>
 </vitamins>
 	<passive>false</passive>
 	<mass>0.01</mass>
@@ -301,11 +327,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>-78.5</x>
+	<y>-73.75</y>
+	<z>0.0</z>
+	<rotw>5.64566152060511E-4</rotw>
+	<rotx>-0.008721939856419824</rotx>
+	<roty>0.9999237655828493</roty>
+	<rotz>-0.008721939856419824</rotz>
 </baseToZframe>
 
 </steerable>
@@ -441,10 +469,10 @@
 	<x>73.5</x>
 	<y>-74.5</y>
 	<z>3.2862601528904634E-14</z>
-	<rotw>0.12410340448119736</rotw>
-	<rotx>0.009742344085488424</rotx>
-	<roty>-0.9921736332213299</roty>
-	<rotz>0.009742344085488103</rotz>
+	<rotw>7.615240651407842E-5</rotw>
+	<rotx>-0.008726203230123235</rotx>
+	<roty>0.9999238489165644</roty>
+	<rotz>-0.008726203230123235</rotz>
 </baseToZframe>
 
 </steerable>
@@ -577,11 +605,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>73.5</x>
+	<y>74.5</y>
+	<z>0.0</z>
+	<rotw>5.64566152060511E-4</rotw>
+	<rotx>-0.008721939856419824</rotx>
+	<roty>0.9999237655828493</roty>
+	<rotz>-0.008721939856419824</rotz>
 </baseToZframe>
 
 </steerable>
@@ -714,11 +744,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>-78.5</x>
+	<y>73.75</y>
+	<z>0.0</z>
+	<rotw>6.559598434775207E-4</rotw>
+	<rotx>-0.00871554281058322</rotx>
+	<roty>0.9997774057971552</roty>
+	<rotz>-0.019202814608956176</rotz>
 </baseToZframe>
 
 </steerable>
@@ -801,10 +833,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.12867639079823737</rotw>
-	<rotx>3.0087687692135096E-4</rotx>
-	<roty>-0.0344770839549142</roty>
-	<rotz>-0.03447708395358955</rotz>
+	<rotw>0.006170601929927255</rotw>
+	<rotx>0.006170582897752477</rotx>
+	<roty>-0.7070789446950648</roty>
+	<rotz>-0.707078944667898</rotz>
 </baseToZframe>
 
 </drivable>
@@ -887,10 +919,10 @@
 	<x>3.1554436208840472E-30</x>
 	<y>74.0</y>
 	<z>-1.6431300764452317E-14</z>
-	<rotw>0.00617049260151637</rotw>
-	<rotx>0.0061706922468217325</rotx>
-	<roty>-0.7070912949273512</roty>
-	<rotz>-0.7070912949273515</rotz>
+	<rotw>0.006170592427164646</rotw>
+	<rotx>0.0061705924271647965</rotx>
+	<roty>-0.7070798567270825</roty>
+	<rotz>-0.7070798567270827</rotz>
 </baseToZframe>
 
 </drivable>

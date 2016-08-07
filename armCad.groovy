@@ -13,7 +13,17 @@ println "Loading STL file"
 ICadGenerator cadGen =new ICadGenerator(){
 	@Override 
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
-		return new ArrayList<>();
+		ArrayList<CSG> parts = new ArrayList<>();
+		if(linkIndex==0){
+			File mount = ScriptingEngine.fileFromGit(
+			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"STL/swivel-bracket.STL");
+			CSG mountCSG  = Vitamins.get(mount)
+			mountCSG.setManipulator(d.getRootListener());
+			
+			parts.add(mountCSG)
+		}
+		return parts
 	}
 	@Override 
 	public ArrayList<CSG> generateBody(MobileBase b ) {return new ArrayList<>();}
