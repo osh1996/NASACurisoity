@@ -48,7 +48,7 @@ ICadGenerator cadGen =new ICadGenerator(){
 		if(linkIndex==1){		
 			File swivel = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
-			"STL/lower-arm.STL");
+			"STL/upper-arm.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
 			
 			.movex(-dh.getR())
@@ -60,7 +60,7 @@ ICadGenerator cadGen =new ICadGenerator(){
 		if(linkIndex==2){		
 			File swivel = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
-			"STL/upper-arm.STL");
+			"STL/lower-arm.STL");
 			CSG swivelCSG  = Vitamins.get(swivel)
 			.rotx(180)
 			.movex(-dh.getR())
