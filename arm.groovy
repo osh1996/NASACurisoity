@@ -1,36 +1,24 @@
-import com.neuronrobotics.bowlerstudio.creature.ICadGenerator;
-import com.neuronrobotics.bowlerstudio.creature.CreatureLab;
-import org.apache.commons.io.IOUtils;
-import com.neuronrobotics.bowlerstudio.vitamins.*;
 import java.nio.file.Paths;
 import eu.mihosoft.vrl.v3d.FileUtil;
 import com.neuronrobotics.bowlerstudio.vitamins.*;
-println "Loading STL file"
+
+String filename = "STL/swivel-bracket.STL"
 // Load an STL file from a git repo
 // Loading a local file also works here
+File servoFile = ScriptingEngine.fileFromGit(
+	"https://github.com/NeuronRobotics/NASACurisoity.git",
+	filename);
+// Load the .CSG from the disk and cache it in memory
+double offset=6.5
+CSG servo  = Vitamins.get(servoFile)
+			.toZMax()
+			.movez(offset)
+			.movex(-offset)
+			.movey(-11)
 
-return new ICadGenerator(){
-	@Override 
-	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
-		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
-		ArrayList<CSG> allCad=new ArrayList<>()
-		
-		return allCad;
-	}
-	@Override 
-	public ArrayList<CSG> generateBody(MobileBase b ) {
-		ArrayList<CSG> allCad=new ArrayList<>();
-		double size =40;
+String outfile =servoFile.getAbsolutePath()+"_moved.STL";
+FileUtil.write(Paths.get(outfile),
+		servo.toStlString());
+println "STL EXPORT to \n"+outfile+" from \n"+servoFile
 
-		File servoFile = ScriptingEngine.fileFromGit(
-			"https://github.com/NeuronRobotics/NASACurisoity.git",
-			"STL/body.STL");
-		// Load the .CSG from the disk and cache it in memory
-		CSG body  = Vitamins.get(servoFile)
-
-		body.setManipulator(b.getRootListener());
-		
-
-		return [body];
-	}
-};
+return servo;

@@ -13,7 +13,7 @@ println "Loading STL file"
 ICadGenerator cadGen =new ICadGenerator(){
 	@Override 
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
-		
+		return new ArrayList<>();
 	}
 	@Override 
 	public ArrayList<CSG> generateBody(MobileBase b ) {return new ArrayList<>();}
