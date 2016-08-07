@@ -11,7 +11,6 @@
 
 <name>NASA_Curiosity</name>
 <appendage>
-
 <name>RobotArm</name>
 	<cadEngine>
 		<git>https://github.com/NeuronRobotics/NASACurisoity.git</git>
@@ -47,7 +46,6 @@
 	<type>hobbyServoHorn</type>
 	<id>standardMicro1</id>
 	</vitamin>
-
 </vitamins>
 	<passive>false</passive>
 	<mass>0.01</mass>
@@ -100,7 +98,6 @@
 	<type>hobbyServoHorn</type>
 	<id>standardMicro1</id>
 	</vitamin>
-
 </vitamins>
 	<passive>false</passive>
 	<mass>0.01</mass>
@@ -153,7 +150,6 @@
 	<type>hobbyServoHorn</type>
 	<id>standardMicro1</id>
 	</vitamin>
-
 </vitamins>
 	<passive>false</passive>
 	<mass>0.01</mass>
@@ -334,10 +330,10 @@
 	<x>-78.5</x>
 	<y>-73.75</y>
 	<z>0.0</z>
-	<rotw>5.644855341135405E-4</rotw>
-	<rotx>-0.008723185494073768</rotx>
-	<roty>1.0000665712791037</roty>
-	<rotz>-0.008723185494073768</rotz>
+	<rotw>5.64566152060511E-4</rotw>
+	<rotx>-0.008721939856419824</rotx>
+	<roty>0.9999237655828493</roty>
+	<rotz>-0.008721939856419824</rotz>
 </baseToZframe>
 
 </steerable>
@@ -473,10 +469,10 @@
 	<x>73.5</x>
 	<y>-74.5</y>
 	<z>3.2862601528904634E-14</z>
-	<rotw>6.678864351195104E-5</rotw>
-	<rotx>-0.0099496162801518</rotx>
-	<roty>1.1401130988724297</roty>
-	<rotz>-0.0099496162801518</rotz>
+	<rotw>7.615240651407842E-5</rotw>
+	<rotx>-0.008726203230123235</rotx>
+	<roty>0.9999238489165644</roty>
+	<rotz>-0.008726203230123235</rotz>
 </baseToZframe>
 
 </steerable>
@@ -612,10 +608,10 @@
 	<x>73.5</x>
 	<y>74.5</y>
 	<z>0.0</z>
-	<rotw>5.644855341135405E-4</rotw>
-	<rotx>-0.008723185494073768</rotx>
-	<roty>1.0000665712791037</roty>
-	<rotz>-0.008723185494073768</rotz>
+	<rotw>5.64566152060511E-4</rotw>
+	<rotx>-0.008721939856419824</rotx>
+	<roty>0.9999237655828493</roty>
+	<rotz>-0.008721939856419824</rotz>
 </baseToZframe>
 
 </steerable>
@@ -751,10 +747,10 @@
 	<x>-78.5</x>
 	<y>73.75</y>
 	<z>0.0</z>
-	<rotw>6.558831592274756E-4</rotw>
-	<rotx>-0.008716561809593286</rotx>
-	<roty>0.9998942972183237</roty>
-	<rotz>-0.01920505975300352</rotz>
+	<rotw>6.559598434775207E-4</rotw>
+	<rotx>-0.00871554281058322</rotx>
+	<roty>0.9997774057971552</roty>
+	<rotz>-0.019202814608956176</rotz>
 </baseToZframe>
 
 </steerable>
@@ -837,10 +833,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.006274245413129613</rotw>
-	<rotx>0.006068659630034033</rotx>
-	<roty>-0.695399692058274</roty>
-	<rotz>-0.695399692031556</rotz>
+	<rotw>0.006170601929927255</rotw>
+	<rotx>0.006170582897752477</rotx>
+	<roty>-0.7070789446950648</roty>
+	<rotz>-0.707078944667898</rotz>
 </baseToZframe>
 
 </drivable>
@@ -923,10 +919,10 @@
 	<x>3.1554436208840472E-30</x>
 	<y>74.0</y>
 	<z>-1.6431300764452317E-14</z>
-	<rotw>0.006170592419563033</rotw>
-	<rotx>0.006170592434761912</rotx>
-	<roty>-0.7070798575980748</roty>
-	<rotz>-0.707079857598075</rotz>
+	<rotw>0.006170592427164646</rotw>
+	<rotx>0.0061705924271647965</rotx>
+	<roty>-0.7070798567270825</roty>
+	<rotz>-0.7070798567270827</rotz>
 </baseToZframe>
 
 </drivable>
