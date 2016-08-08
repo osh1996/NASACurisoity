@@ -15,12 +15,12 @@ ICadGenerator cadGen =new ICadGenerator(){
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		ArrayList<CSG> parts = new ArrayList<>();
-		int i=linkIndex;
+
 		DHLink dh = dhLinks.get(linkIndex)
 		// Hardware to engineering units configuration
-		LinkConfiguration conf = d.getLinkConfiguration(i);
+		LinkConfiguration conf = d.getLinkConfiguration(linkIndex);
 		// Engineering units to kinematics link (limits and hardware type abstraction)
-		AbstractLink abstractLink = d.getAbstractLink(i);// Transform used by the UI to render the location of the object
+		AbstractLink abstractLink = d.getAbstractLink(linkIndex);// Transform used by the UI to render the location of the object
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
 		if(linkIndex==0){
@@ -77,6 +77,9 @@ ICadGenerator cadGen =new ICadGenerator(){
 					.movez(-dh.getD())
 			swivelCSG.setManipulator(manipulator);
 			parts.add(swivelCSG)
+		}
+		for(int i=0;i<parts.size();i++){
+			parts.get(i).setColor(javafx.scene.paint.Color.WHITE)
 		}
 		return parts
 	}

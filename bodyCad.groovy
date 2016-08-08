@@ -92,9 +92,12 @@ return new ICadGenerator(){
 							LSP2R.toStlString());
 */
 		body.setManipulator(b.getRootListener());
-
+		body.setColor(javafx.scene.paint.Color.WHITE)
+		def parts = [body ,USP1R,LSP1R,USP2R,LSP2R,USP1L,LSP1L,USP2L,LSP2L ] as ArrayList<CSG>
 		
-
-		return [body ,USP1R,LSP1R,USP2R,LSP2R,USP1L,LSP1L,USP2L,LSP2L ];
+		for(int i=1;i<parts.size();i++){
+			parts.get(i).setColor(javafx.scene.paint.Color.GRAY)
+		}
+		return parts;
 	}
 };
