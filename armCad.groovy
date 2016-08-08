@@ -31,7 +31,7 @@ ICadGenerator cadGen =new ICadGenerator(){
 			.rotz(-90)
 			.roty(-90)
 			mountCSG.setManipulator(d.getRootListener());
-			parts.add(mountCSG)
+			//parts.add(mountCSG)
 			
 			File swivel = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
