@@ -14,16 +14,16 @@ return new ICadGenerator(){
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		ArrayList<CSG> allCad=new ArrayList<CSG>()
-		int i=linkIndex;
+		
 		DHLink dh = dhLinks.get(linkIndex)
 		// Hardware to engineering units configuration
-		LinkConfiguration conf = d.getLinkConfiguration(i);
+		LinkConfiguration conf = d.getLinkConfiguration(linkIndex);
 		// Engineering units to kinematics link (limits and hardware type abstraction)
-		AbstractLink abstractLink = d.getAbstractLink(i);// Transform used by the UI to render the location of the object
+		AbstractLink abstractLink = d.getAbstractLink(linkIndex);// Transform used by the UI to render the location of the object
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
 
-		if (i==0){
+		if (linkIndex==0){
 			
 			File steer_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
@@ -34,7 +34,7 @@ return new ICadGenerator(){
 			allCad.add(steer)
 	
 		}
-		if (i==1){
+		if (linkIndex==1){
 			File wheel_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/wheel.STL");
@@ -58,6 +58,9 @@ return new ICadGenerator(){
 			tire.setManipulator(manipulator)
 
 			allCad.add(tire)
+		}
+		for(int i=0;i<allCad.size();i++){
+			allCad.get(i).setColor(javafx.scene.paint.Color.GRAY)
 		}
 		return allCad;
 	}
