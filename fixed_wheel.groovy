@@ -50,6 +50,9 @@ return new ICadGenerator(){
 
 			allCad.add(tire)
 		}
+		for(int i=1;i<allCad.size();i++){
+			allCad.get(i).setColor(javafx.scene.paint.Color.GRAY)
+		}
 		return allCad;
 	}
 	@Override 
