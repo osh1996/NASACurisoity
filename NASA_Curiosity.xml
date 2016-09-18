@@ -26,7 +26,7 @@
 	<deviceName>dyio</deviceName>
 	<type>servo-rotory</type>
 	<index>4</index>
-	<scale>0.33</scale>
+	<scale>5.0</scale>
 	<upperLimit>255.0</upperLimit>
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
@@ -79,7 +79,7 @@
 	<deviceName>dyio</deviceName>
 	<type>servo-rotory</type>
 	<index>5</index>
-	<scale>0.33</scale>
+	<scale>5.0</scale>
 	<upperLimit>255.0</upperLimit>
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
@@ -132,7 +132,7 @@
 	<deviceName>dyio</deviceName>
 	<type>servo-rotory</type>
 	<index>6</index>
-	<scale>0.33</scale>
+	<scale>5.0</scale>
 	<upperLimit>255.0</upperLimit>
 	<lowerLimit>3.8059701492537314</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
@@ -185,7 +185,7 @@
 	<deviceName>dyio</deviceName>
 	<type>servo-rotory</type>
 	<index>7</index>
-	<scale>1.0</scale>
+	<scale>5.0</scale>
 	<upperLimit>100000.0</upperLimit>
 	<lowerLimit>-100000.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
@@ -196,6 +196,16 @@
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
 	<vitamins>
+	<vitamin>
+	<name>electroMechanical</name>
+	<type>hobbyServo</type>
+	<id>standardMicro</id>
+	</vitamin>
+	<vitamin>
+	<name>shaft</name>
+	<type>hobbyServoHorn</type>
+	<id>standardMicro1</id>
+	</vitamin>
 
 </vitamins>
 	<passive>false</passive>
@@ -238,10 +248,10 @@
 	<x>-75.00000000000001</x>
 	<y>-23.069999999999993</y>
 	<z>38.095238095238095</z>
-	<rotw>0.00872620321864073</rotw>
-	<rotx>-7.615242180041522E-5</rotx>
-	<roty>0.008726203218642212</roty>
-	<rotz>-0.999923847578311</rotz>
+	<rotw>0.008726203212024842</rotw>
+	<rotx>-7.615242185805181E-5</rotx>
+	<roty>0.008726203225257094</roty>
+	<rotz>-0.9999238483363014</rotz>
 </baseToZframe>
 
 </appendage>
@@ -377,10 +387,10 @@
 	<x>-78.5</x>
 	<y>-73.75</y>
 	<z>0.0</z>
-	<rotw>5.64566152060511E-4</rotw>
-	<rotx>-0.008721939856419824</rotx>
-	<roty>0.9999237655828493</roty>
-	<rotz>-0.008721939856419824</rotz>
+	<rotw>5.644855341135405E-4</rotw>
+	<rotx>-0.008723185494073768</rotx>
+	<roty>1.0000665712791037</roty>
+	<rotz>-0.008723185494073768</rotz>
 </baseToZframe>
 
 </steerable>
@@ -516,10 +526,10 @@
 	<x>73.5</x>
 	<y>-74.5</y>
 	<z>3.2862601528904634E-14</z>
-	<rotw>7.615240651407842E-5</rotw>
-	<rotx>-0.008726203230123235</rotx>
-	<roty>0.9999238489165644</roty>
-	<rotz>-0.008726203230123235</rotz>
+	<rotw>6.678864351195104E-5</rotw>
+	<rotx>-0.0099496162801518</rotx>
+	<roty>1.1401130988724297</roty>
+	<rotz>-0.0099496162801518</rotz>
 </baseToZframe>
 
 </steerable>
@@ -655,10 +665,10 @@
 	<x>73.5</x>
 	<y>74.5</y>
 	<z>0.0</z>
-	<rotw>5.64566152060511E-4</rotw>
-	<rotx>-0.008721939856419824</rotx>
-	<roty>0.9999237655828493</roty>
-	<rotz>-0.008721939856419824</rotz>
+	<rotw>5.644855341135405E-4</rotw>
+	<rotx>-0.008723185494073768</rotx>
+	<roty>1.0000665712791037</roty>
+	<rotz>-0.008723185494073768</rotz>
 </baseToZframe>
 
 </steerable>
@@ -794,10 +804,10 @@
 	<x>-78.5</x>
 	<y>73.75</y>
 	<z>0.0</z>
-	<rotw>6.559598434775207E-4</rotw>
-	<rotx>-0.00871554281058322</rotx>
-	<roty>0.9997774057971552</roty>
-	<rotz>-0.019202814608956176</rotz>
+	<rotw>6.558831592274756E-4</rotw>
+	<rotx>-0.008716561809593286</rotx>
+	<roty>0.9998942972183237</roty>
+	<rotz>-0.01920505975300352</rotz>
 </baseToZframe>
 
 </steerable>
@@ -880,10 +890,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.006170601929927255</rotw>
-	<rotx>0.006170582897752477</rotx>
-	<roty>-0.7070789446950648</roty>
-	<rotz>-0.707078944667898</rotz>
+	<rotw>0.006274245413129613</rotw>
+	<rotx>0.006068659630034033</rotx>
+	<roty>-0.695399692058274</roty>
+	<rotz>-0.695399692031556</rotz>
 </baseToZframe>
 
 </drivable>
@@ -966,10 +976,10 @@
 	<x>3.1554436208840472E-30</x>
 	<y>74.0</y>
 	<z>-1.6431300764452317E-14</z>
-	<rotw>0.006170592427164646</rotw>
-	<rotx>0.0061705924271647965</rotx>
-	<roty>-0.7070798567270825</roty>
-	<rotz>-0.7070798567270827</rotz>
+	<rotw>0.006170592419563033</rotw>
+	<rotx>0.006170592434761912</rotx>
+	<roty>-0.7070798575980748</roty>
+	<rotz>-0.707079857598075</rotz>
 </baseToZframe>
 
 </drivable>
