@@ -27,11 +27,11 @@
 	<type>servo-rotory</type>
 	<index>4</index>
 	<scale>5.0</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
+	<upperLimit>2550.0</upperLimit>
+	<lowerLimit>-2550.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>128.43283582089552</staticOffset>
+	<staticOffset>0.0</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>235</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -81,11 +81,11 @@
 	<type>servo-rotory</type>
 	<index>5</index>
 	<scale>5.0</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
+	<upperLimit>2550.0</upperLimit>
+	<lowerLimit>-2550.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>4.305970149253733</staticOffset>
+	<staticOffset>0.0</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>128</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -136,10 +136,10 @@
 	<index>6</index>
 	<scale>5.0</scale>
 	<upperLimit>255.0</upperLimit>
-	<lowerLimit>3.8059701492537314</lowerLimit>
+	<lowerLimit>-2550.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>111.48507462686564</staticOffset>
+	<staticOffset>0.0</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>121</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
