@@ -390,11 +390,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>-78.5</x>
+	<y>-73.75</y>
+	<z>0.0</z>
+	<rotw>0.00872620321864073</rotw>
+	<rotx>-0.9999238475782983</rotx>
+	<roty>0.00872620321864221</roty>
+	<rotz>-7.615242180061402E-5</rotz>
 </baseToZframe>
 
 </steerable>
@@ -670,7 +672,9 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
+	<x>73.5</x>
+	<y>74.5</y>
+	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>0.0</rotx>
 	<roty>0.0</roty>
@@ -809,11 +813,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>-78.5</x>
+	<y>73.75</y>
+	<z>0.0</z>
+	<rotw>0.00872620321864073</rotw>
+	<rotx>-0.9999238475782983</rotx>
+	<roty>0.00872620321864221</roty>
+	<rotz>-7.615242180061402E-5</rotz>
 </baseToZframe>
 
 </steerable>
