@@ -249,13 +249,11 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<x>-75.00000000000001</x>
-	<y>-23.069999999999993</y>
-	<z>38.095238095238095</z>
-	<rotw>0.00843612895612504</rotw>
-	<rotx>-7.877051236703299E-5</rotx>
-	<roty>0.009026206682614734</roty>
-	<rotz>-1.0343008395490412</rotz>
+	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
 </baseToZframe>
 
 </appendage>
@@ -393,10 +391,10 @@
 	<x>-78.5</x>
 	<y>-73.75</y>
 	<z>0.0</z>
-	<rotw>0.008726203212750045</rotw>
-	<rotx>-0.9999238482532015</rotx>
-	<roty>0.008726203224532</roty>
-	<rotz>-7.615242185192186E-5</rotz>
+	<rotw>0.008726164535709213</rotw>
+	<rotx>-0.9999282795478452</rotx>
+	<roty>0.008726241895854499</roty>
+	<rotz>-7.615275933135213E-5</rotz>
 </baseToZframe>
 
 </steerable>
@@ -531,13 +529,11 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<x>73.5</x>
-	<y>-74.5</y>
-	<z>3.2862601528904634E-14</z>
-	<rotw>6.030331526112173E-5</rotw>
-	<rotx>-0.011019651306679763</rotx>
-	<roty>1.2627269681391529</roty>
-	<rotz>-0.011019651306679763</rotz>
+	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
 </baseToZframe>
 
 </steerable>
@@ -675,10 +671,10 @@
 	<x>73.5</x>
 	<y>74.5</y>
 	<z>0.0</z>
-	<rotw>0.008726535498377834</rotw>
-	<rotx>-0.9999619230637089</rotx>
-	<roty>3.1796262106055705E-15</roty>
-	<rotz>3.0695769755957393E-15</rotz>
+	<rotw>0.008726535524873782</rotw>
+	<rotx>-0.9999619200280364</rotx>
+	<roty>3.1796262009529123E-15</roty>
+	<rotz>3.069576966277165E-15</rotz>
 </baseToZframe>
 
 </steerable>
@@ -816,10 +812,10 @@
 	<x>-78.5</x>
 	<y>73.75</y>
 	<z>0.0</z>
-	<rotw>0.008726203212750045</rotw>
-	<rotx>-0.9999238482532015</rotx>
-	<roty>0.008726203224532</roty>
-	<rotz>-7.615242185192186E-5</rotz>
+	<rotw>0.008726164535709213</rotw>
+	<rotx>-0.9999282795478452</rotx>
+	<roty>0.008726241895854499</roty>
+	<rotz>-7.615275933135213E-5</rotz>
 </baseToZframe>
 
 </steerable>
@@ -903,10 +899,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.006170592427164643</rotw>
-	<rotx>0.006170592427164799</rotx>
-	<roty>-0.7070798567270827</roty>
-	<rotz>-0.7070798567270825</rotz>
+	<rotw>0.00617059241954504</rotw>
+	<rotx>0.006170592434779905</rotx>
+	<roty>-0.7070798576001365</roty>
+	<rotz>-0.7070798576001363</rotz>
 </baseToZframe>
 
 </drivable>
@@ -990,10 +986,10 @@
 	<x>3.1554436208840472E-30</x>
 	<y>74.0</y>
 	<z>-1.6431300764452317E-14</z>
-	<rotw>0.004679628295546084</rotw>
-	<rotx>0.008136457120301135</rotx>
-	<roty>-0.9323456382513695</roty>
-	<rotz>-0.9323456382513697</rotz>
+	<rotw>0.006170592427164643</rotw>
+	<rotx>0.006170592427164799</rotx>
+	<roty>-0.7070798567270827</roty>
+	<rotz>-0.7070798567270825</rotz>
 </baseToZframe>
 
 </drivable>
