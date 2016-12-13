@@ -531,11 +531,13 @@
 </ZframeToRAS>
 
 <baseToZframe>
-	<!-- ERROR a NaN was detected and replaced with a valid rotation -->
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<x>73.5</x>
+	<y>-74.5</y>
+	<z>3.2862601528904634E-14</z>
+	<rotw>0.00872620321864073</rotw>
+	<rotx>-0.9999238475782983</rotx>
+	<roty>0.00872620321864221</roty>
+	<rotz>-7.615242180061402E-5</rotz>
 </baseToZframe>
 
 </steerable>
