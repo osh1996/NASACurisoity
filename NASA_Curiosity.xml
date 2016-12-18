@@ -252,10 +252,10 @@
 	<x>-75.00000000000001</x>
 	<y>-23.069999999999993</y>
 	<z>38.0952380952381</z>
-	<rotw>0.054558709009705886</rotw>
-	<rotx>0.017903047010183564</rotx>
-	<roty>0.007757152896106053</roty>
-	<rotz>0.998319904325288</rotz>
+	<rotw>0.054558816487634824</rotw>
+	<rotx>0.017903011951484017</rotx>
+	<roty>0.007757137705636377</roty>
+	<rotz>0.9983179493621163</rotz>
 </baseToZframe>
 
 </appendage>
@@ -300,7 +300,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -354,7 +354,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.1</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -393,10 +393,10 @@
 	<x>-78.5</x>
 	<y>-73.75</y>
 	<z>0.0</z>
-	<rotw>0.005988611651924076</rotw>
-	<rotx>-0.7070814300302705</rotx>
-	<roty>-0.7070782537907371</roty>
-	<rotz>0.006352572798085796</rotz>
+	<rotw>0.0059875959315833435</rotw>
+	<rotx>-0.7072013688991231</rotx>
+	<roty>-0.7071981921208194</roty>
+	<rotz>0.006353650354878166</rotz>
 </baseToZframe>
 
 </steerable>
@@ -441,7 +441,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -495,7 +495,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.1</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -534,10 +534,10 @@
 	<x>73.5</x>
 	<y>-74.5</y>
 	<z>3.2862601528904634E-14</z>
-	<rotw>0.006170592397567613</rotw>
-	<rotx>-0.7070798601262398</rotx>
-	<roty>-0.7070798601262398</roty>
-	<rotz>0.006170592456905767</rotz>
+	<rotw>0.006170202857931536</rotw>
+	<rotx>-0.7071244963665876</rotx>
+	<roty>-0.7071244963665876</roty>
+	<rotz>0.006170981991476204</rotz>
 </baseToZframe>
 
 </steerable>
@@ -582,7 +582,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -636,7 +636,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.1</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -675,10 +675,10 @@
 	<x>73.5</x>
 	<y>74.5</y>
 	<z>0.0</z>
-	<rotw>0.0061705924219694844</rotw>
-	<rotx>-0.7070798573220736</rotx>
-	<roty>-0.7070798573220736</roty>
-	<rotz>0.00617059243235546</rotz>
+	<rotw>0.006170524232177906</rotw>
+	<rotx>-0.707087670589587</rotx>
+	<roty>-0.707087670589587</roty>
+	<rotz>0.006170660617709914</rotz>
 </baseToZframe>
 
 </steerable>
@@ -723,7 +723,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -777,7 +777,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.1</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -816,10 +816,10 @@
 	<x>-78.5</x>
 	<y>73.75</y>
 	<z>0.0</z>
-	<rotw>0.005988611651924076</rotw>
-	<rotx>-0.7070814300302705</rotx>
-	<roty>-0.7070782537907371</roty>
-	<rotz>0.006352572798085796</rotz>
+	<rotw>0.0059875959315833435</rotw>
+	<rotx>-0.7072013688991231</rotx>
+	<roty>-0.7071981921208194</roty>
+	<rotz>0.006353650354878166</rotz>
 </baseToZframe>
 
 </steerable>
@@ -864,7 +864,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.1</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -903,10 +903,10 @@
 	<x>-3.1554436208840472E-30</x>
 	<y>-74.0</y>
 	<z>1.6431300764452317E-14</z>
-	<rotw>0.0061705924271648</rotw>
-	<rotx>0.006170592427164642</rotx>
-	<roty>0.7070798567270872</roty>
-	<rotz>0.7070798567270871</rotz>
+	<rotw>0.00617059241904126</rotw>
+	<rotx>0.006170592435283685</rotx>
+	<roty>0.7070798576578818</roty>
+	<rotz>0.7070798576578817</rotz>
 </baseToZframe>
 
 </drivable>
@@ -951,7 +951,7 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.1</mass>
+	<mass>0.001</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -990,10 +990,10 @@
 	<x>3.1554436208840472E-30</x>
 	<y>74.0</y>
 	<z>-1.6431300764452317E-14</z>
-	<rotw>0.00616491034199489</rotw>
-	<rotx>0.006176274512730974</rotx>
-	<roty>0.7070797574776198</roty>
-	<rotz>0.707079955931311</rotz>
+	<rotw>0.006164910308917814</rotw>
+	<rotx>0.00617627454586452</rotx>
+	<roty>0.7070797612710817</roty>
+	<rotz>0.7070799597247739</rotz>
 </baseToZframe>
 
 </drivable>
