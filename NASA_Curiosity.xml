@@ -18,7 +18,7 @@
 		<file>armCad.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
@@ -267,7 +267,7 @@
 		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
@@ -408,7 +408,7 @@
 		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
@@ -549,7 +549,7 @@
 		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
@@ -690,7 +690,7 @@
 		<file>steer_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
@@ -831,7 +831,7 @@
 		<file>fixed_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
@@ -918,7 +918,7 @@
 		<file>fixed_wheel.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
+		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
