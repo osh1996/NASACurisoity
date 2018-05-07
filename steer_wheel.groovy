@@ -27,35 +27,39 @@ return new ICadGenerator(){
 		if (linkIndex==0){
 			
 			File steer_file = ScriptingEngine.fileFromGit(
-			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"https://github.com/osh1996/NASACurisoity.git",
 			"STL/steering-bracket.STL");
 			CSG steer = Vitamins.get(steer_file)
-
+			
 			steer.setManipulator(manipulator)
 			allCad.add(steer)
 	
 		}
 		if (linkIndex==1){
 			File wheel_file = ScriptingEngine.fileFromGit(
-			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"https://github.com/osh1996/NASACurisoity.git",
 			"STL/wheel.STL");
 			File tire_file = ScriptingEngine.fileFromGit(
-			"https://github.com/NeuronRobotics/NASACurisoity.git",
+			"https://github.com/osh1996/NASACurisoity.git",
 			"STL/tire.STL");
-			/*
+			
 			CSG wheel = Vitamins.get(wheel_file)
 			wheel=wheel			
 					.movex(-wheel.getMaxX()/2)
 					.movey(-wheel.getMaxY()/2)
 					.movez(-wheel.getMaxZ()/2)
 					.rotx(90)
+					print "STEER WHEEL CENTER "
+					println wheel.getCenter()
 			wheel.setManipulator(manipulator)
 			
 			allCad.add(wheel)
-			*/
+			
 			CSG tire = Vitamins.get(tire_file)
 					.movex(-dh.getR())
 					.movez(-dh.getD())
+			print "STEER TIRE CENTER "
+			println tire.getCenter()
 			tire.setManipulator(manipulator)
 
 			allCad.add(tire)

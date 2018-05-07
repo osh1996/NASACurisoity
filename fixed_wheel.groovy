@@ -32,21 +32,25 @@ return new ICadGenerator(){
 			File tire_file = ScriptingEngine.fileFromGit(
 			"https://github.com/NeuronRobotics/NASACurisoity.git",
 			"STL/tire.STL");
-			/*
+  
 			CSG wheel = Vitamins.get(wheel_file)
 			wheel=wheel			
-					.movex(-wheel.getMaxX()/2)
-					.movey(-wheel.getMaxY()/2)
-					.movez(-wheel.getMaxZ()/2)
+					.movex(-2*dh.getR()+2.37920)
+					.movey(-dh.getR()+0.5- 2.10190)
+					.movez(-6.5-3.95063)
 					.rotx(90)
+			print "FIXED WHEEL CENTER "
+			println wheel.getCenter() 		
+			//println wheel.metaClass.methods*.name.sort().unique() 		
 			wheel.setManipulator(manipulator)
 			
 			allCad.add(wheel)
-			*/
+			
 			CSG tire = Vitamins.get(tire_file)
 					.movex(-dh.getR())
 					.movez(-dh.getD())
-
+			print "FIXED TIRE CENTER "
+			println tire.getCenter()
 			tire.setManipulator(manipulator)
 
 			allCad.add(tire)
