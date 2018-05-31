@@ -35,9 +35,9 @@ return new ICadGenerator(){
   
 			CSG wheel = Vitamins.get(wheel_file)
 			wheel=wheel			
-					.movex(-2*dh.getR()+2.37920)
-					.movey(-dh.getR()+0.5- 2.10190)
-					.movez(-6.5-3.95063)
+					.movex(-dh.getR()-(wheel.getMaxX()/2))
+					.movey(-wheel.getMaxY()/2)
+					.movez(-dh.getD()-(wheel.getMaxZ()/2))
 					.rotx(90)
 			print "FIXED WHEEL CENTER "
 			println wheel.getCenter() 		
