@@ -46,14 +46,14 @@ return new ICadGenerator(){
 			
 			allCad.add(wheel)
 			
-			CSG tire = Vitamins.get(tire_file)
-					.movex(-dh.getR())
-					.movez(-dh.getD())
-			print "FIXED TIRE CENTER "
-			println tire.getCenter()
-			tire.setManipulator(manipulator)
-
-			allCad.add(tire)
+//			CSG tire = Vitamins.get(tire_file)
+//					.movex(-dh.getR())
+//					.movez(-dh.getD())
+//			print "FIXED TIRE CENTER "
+//			println tire.getCenter()
+//			tire.setManipulator(manipulator)
+//
+//			allCad.add(tire)
 		}
 		for(int i=0;i<allCad.size();i++){
 			allCad.get(i).setColor(javafx.scene.paint.Color.GRAY)
