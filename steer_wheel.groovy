@@ -45,9 +45,11 @@ return new ICadGenerator(){
 			
 			CSG wheel = Vitamins.get(wheel_file)
 			wheel=wheel			
-					.movex(-wheel.getMaxX()/2)
+//					.movex(-wheel.getMaxX()/2)
+					.movex(-dh.getR()-(wheel.getMaxX()/2))
 					.movey(-wheel.getMaxY()/2)
-					.movez(-wheel.getMaxZ()/2)
+					.movez(-dh.getD()-(wheel.getMaxZ()/2))
+//					.movez(-wheel.getMaxZ()/2)
 					.rotx(90)
 					print "STEER WHEEL CENTER "
 					println wheel.getCenter()
